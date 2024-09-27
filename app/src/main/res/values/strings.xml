@@ -12,4 +12,7 @@
     <string name="EmailSenha">Email ou usuario</string>
     <string name="Proximo">Próximo</string>
     <string name="Cancelar">Cancelar</string>
+    <string name="GerenciamentoEmpresa">Gerenciamento de Empresa</string>
+    <string name="Texto4">Empresa OdontoFi\nAvalição X X X X ou 4.0\nQuantidade de profissionais\nQuantidade de sinistros\nRedução de prejuizo.</string>
+    <string name="VerPro">Ver Profissionais</string>
 </resources>
