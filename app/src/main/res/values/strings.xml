@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ProjetoOdonto</string>
+    <string name="Aguarde">aguarde estamos carregando nosso sistema.\n</string>
+    <string name="SouConsultorio">Sou Consultorio</string>
+    <string name="Email">Email</string>
+    <string name="Senha">Senha</string>
+    <string name="Login">Login</string>
+    <string name="Cadastro">Cadastro</string>
+    <string name="EsqueceuSenha">Esqueceu Senha?</string>
+    <string name="EsqueceuSenha2">Esqueci minha senha</string>
+    <string name="Texto2">Para redefinir sua senha, informe \no usuario ou email \ncadastrado na sua conta e \nlhe enviaremos um link com as instruções\n</string>
+    <string name="EmailSenha">Email ou usuario</string>
+    <string name="Proximo">Próximo</string>
+    <string name="Cancelar">Cancelar</string>
+</resources>
