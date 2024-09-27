@@ -31,4 +31,8 @@
     <string name="opa32" />
     <string name="pá" />
     <string name="pa">Dr Manoel</string>
+    <string name="ClientesA">Clientes Atendidos</string>
+    <string name="tsadas" />
+    <string name="opa3">"Eduarda\n + Procedimentos realizados por:\nClaudio\n             + limpeza OK\n         + Carie OK\nValor do tratamento:\nLucro por parte do profissional: "</string>
+    <string name="Denunciar">Denunciar</string>
 </resources>
