@@ -13,6 +13,12 @@
         android:theme="@style/Theme.ProjetoOdonto"
         tools:targetApi="31">
         <activity
+            android:name=".VerProfissionais"
+            android:exported="false" />
+        <activity
+            android:name=".CadastroConsultorio"
+            android:exported="false" />
+        <activity
             android:name=".GerenciamentoEmpresa"
             android:exported="false" />
         <activity

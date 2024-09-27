@@ -15,4 +15,20 @@
     <string name="GerenciamentoEmpresa">Gerenciamento de Empresa</string>
     <string name="Texto4">Empresa OdontoFi\nAvalição X X X X ou 4.0\nQuantidade de profissionais\nQuantidade de sinistros\nRedução de prejuizo.</string>
     <string name="VerPro">Ver Profissionais</string>
+    <string name="CadastroConsultorio">Cadastro de Consultorio\n</string>
+    <string name="Con">Nome Consultorio</string>
+    <string name="Func2">Funcionarios</string>
+    <string name="Log">Login</string>
+    <string name="Senha3">Senha</string>
+    <string name="Cadastro2">Cadastro\n</string>
+    <string name="VerPro2">Ver profissionais</string>
+    <string name="text2">Empresa OdontoFi\nAvalição X X X X ou 4.0\nQuantidade de profissionais\nQuantidade de sinistros\nRedução de prejuizo.</string>
+    <string name="Ver5">Saber sobre o profissional</string>
+    <string name="text3">Empresa OdontoFi\nAvalição do profissional X\nQuantidade de\natendimentos realizados X\n</string>
+    <string name="Preju">Ver Prejuizo</string>
+    <string name="ClientesAten">Clientes Atendidos</string>
+    <string name="NomeDo">Dr Claudio</string>
+    <string name="opa32" />
+    <string name="pá" />
+    <string name="pa">Dr Manoel</string>
 </resources>
