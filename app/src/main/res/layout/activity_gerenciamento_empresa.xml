@@ -80,9 +80,13 @@
         android:id="@+id/imageView5"
         android:layout_width="96dp"
         android:layout_height="98dp"
-        app:srcCompat="@drawable/logo_empresa3"
-        tools:layout_editor_absoluteX="51dp"
-        tools:layout_editor_absoluteY="435dp" />
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toStartOf="@+id/text5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:srcCompat="@drawable/logo_empresa3" />
 
     <TextView
         android:id="@+id/textView15"

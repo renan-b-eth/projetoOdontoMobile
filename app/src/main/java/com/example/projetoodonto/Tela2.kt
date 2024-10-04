@@ -2,14 +2,20 @@ package com.example.projetoodonto
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
+import android.widget.EditText
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class Tela2 : AppCompatActivity() {
+    private lateinit var email2:EditText
+    private lateinit var senha2:EditText
     override fun onCreate(savedInstanceState: Bundle?) {
+
+
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_tela2)
@@ -19,14 +25,19 @@ class Tela2 : AppCompatActivity() {
             insets
 
         }
+            email2 = findViewById(R.id.edtEmail)
+            senha2 = findViewById(R.id.edtSenha)
+
             val button = findViewById<Button>(R.id.btnLogar)
         button.setOnClickListener {
             val emailPadrao = "adm@adm.com"
             val senhaPadrao = "adm"
-            val email = R.id.edtEmail.toString()
-            val senha = R.id.edtSenha.toString()
+            val email = email2.text.toString();
+            val senha = senha2.text.toString();
             if(email.equals(emailPadrao) && senha.equals(senhaPadrao)){
-                println("LOGADO") /*IR PARA A TELA*/
+                Log.i("teste", "LOGADO") /*IR PARA A TELA*/
+                val intent = Intent(this, GerenciamentoEmpresa::class.java)
+                startActivity(intent)
             }
 
         }
