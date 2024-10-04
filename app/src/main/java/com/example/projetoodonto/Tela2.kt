@@ -21,8 +21,14 @@ class Tela2 : AppCompatActivity() {
         }
             val button = findViewById<Button>(R.id.btnLogar)
         button.setOnClickListener {
-            val intent = Intent(this, GerenciamentoEmpresa::class.java)
-            startActivity(intent)
+            val emailPadrao = "adm@adm.com"
+            val senhaPadrao = "adm"
+            val email = R.id.edtEmail.toString()
+            val senha = R.id.edtSenha.toString()
+            if(email.equals(emailPadrao) && senha.equals(senhaPadrao)){
+                println("LOGADO") /*IR PARA A TELA*/
+            }
+
         }
     }
 }
