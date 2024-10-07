@@ -6,7 +6,7 @@ Lucas Alcântara Carvalho - RM95111
 Glenda Delfy Vela Mamani - RM552667
 
 
-# Sobre as explicações se encontra documentado no figma o que cada tela irá realizar.
+# Documentação do projeto se encontra na Pasta Documentação.
 
 # Link do Figma:
 https://www.figma.com/design/iEEA0MaHMhA4vofMGW21ox/figma-CHALLENGE-ODONTOPREV-RENAN-LUCAS-E-GLENDA?node-id=0-1&t=ALONURIgZa7bRcPe-1
@@ -14,7 +14,7 @@ https://www.figma.com/design/iEEA0MaHMhA4vofMGW21ox/figma-CHALLENGE-ODONTOPREV-R
 # Link do repositório:
 https://github.com/renan-b-eth/projetoOdontoMobile
 
-# Link do vídeo funcionando ( figma ):
+# Link do Prototipo funcionando ( figma ):
 https://www.youtube.com/watch?v=aERVSo9xpjc
 
 # Download do .APK ( que também estará no repositório github )
