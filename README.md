@@ -15,11 +15,7 @@ https://www.figma.com/design/iEEA0MaHMhA4vofMGW21ox/figma-CHALLENGE-ODONTOPREV-R
 https://github.com/renan-b-eth/projetoOdontoMobile
 
 # Link do vídeo funcionando ( figma ):
-ANTIGO 
-https://youtu.be/Qbm2XcNeMaQ ( apenas para documentação e evolução do projeto )
-
-ATUALIZADO E O QUE É PARA SER AVALIADO.
-https://www.youtube.com/watch?v=rYetTPWtk0U
+https://www.youtube.com/watch?v=aERVSo9xpjc
 
 # Download do .APK ( que também estará no repositório github )
 https://drive.google.com/file/d/1hGiYC-SmcJgrtb3UpstvC3Sxjf8N1V2e/view?usp=sharing
