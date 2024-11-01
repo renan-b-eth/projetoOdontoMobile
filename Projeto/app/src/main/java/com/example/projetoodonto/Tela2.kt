@@ -5,12 +5,13 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class Tela2 : AppCompatActivity() {
+class Tela2 : AppCompatActivity(){
     private lateinit var email2:EditText
     private lateinit var senha2:EditText
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,6 +26,7 @@ class Tela2 : AppCompatActivity() {
             insets
 
         }
+
             email2 = findViewById(R.id.edtEmail)
             senha2 = findViewById(R.id.edtSenha)
 
@@ -38,6 +40,19 @@ class Tela2 : AppCompatActivity() {
                 Log.i("teste", "LOGADO") /*IR PARA A TELA*/
                 val intent = Intent(this, GerenciamentoEmpresa::class.java)
                 startActivity(intent)
+            }
+
+
+
+
+            /*fun chamarFuncaoDeA(esqueceuSenha: EsqueceuSenha){
+                esqueceuSenha.trocarSenha()
+            }*/
+
+            val textEsqueceu = findViewById<Button>(R.id.btnEsqueceuSenha)
+            textEsqueceu.setOnClickListener{
+                val intent2 = Intent(this, EsqueceuSenha::class.java)
+                startActivity(intent2)
             }
 
         }
