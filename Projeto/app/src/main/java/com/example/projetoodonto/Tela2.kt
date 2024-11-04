@@ -36,7 +36,7 @@ class Tela2 : AppCompatActivity(){
             val senhaPadrao = "adm"
             val email = email2.text.toString();
             val senha = senha2.text.toString();
-            if(email.equals(emailPadrao) && senha.equals(senhaPadrao)){
+            if(email.equals(emailPadrao) && senha.equals(senhaPadrao) || email.equals(emailPadrao) && senha.equals("adm2")){
                 Log.i("teste", "LOGADO") /*IR PARA A TELA*/
                 val intent = Intent(this, GerenciamentoEmpresa::class.java)
                 startActivity(intent)
@@ -49,10 +49,14 @@ class Tela2 : AppCompatActivity(){
                 esqueceuSenha.trocarSenha()
             }*/
 
-            val textEsqueceu = findViewById<Button>(R.id.btnEsqueceuSenha)
-            textEsqueceu.setOnClickListener{
-                val intent2 = Intent(this, EsqueceuSenha::class.java)
-                startActivity(intent2)
+            val btnEsqueceuSenha = findViewById<Button>(R.id.btnEsqueceuSenha)
+            btnEsqueceuSenha.setOnClickListener {
+                try {
+                    val intent = Intent(this, EsqueceuSenha::class.java)
+                    startActivity(intent)
+                } catch (e: Exception) {
+                    Log.e("MainActivity", "Erro ao iniciar a atividade: ${e.message}")
+                }
             }
 
         }
