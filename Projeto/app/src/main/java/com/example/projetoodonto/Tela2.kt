@@ -59,6 +59,16 @@ class Tela2 : AppCompatActivity(){
                 }
             }
 
+            val btnCadastro = findViewById<Button>(R.id.btnCadastro)
+            btnCadastro.setOnClickListener {
+                try {
+                    val intent = Intent(this, CadastroConsultorio::class.java)
+                    startActivity(intent)
+                } catch (e: Exception) {
+                    Log.e("MainActivity", "Erro ao iniciar a atividade: ${e.message}")
+                }
+            }
+
         }
     }
 }
