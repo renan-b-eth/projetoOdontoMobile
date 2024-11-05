@@ -11,6 +11,11 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import api.Endpoint
+import com.google.gson.JsonObject
+import retrofit2.Call
+import retrofit2.Response
+import util.NetworkUtils.NetworkUtils
 
 class Tela2 : AppCompatActivity(){
     private lateinit var email2:EditText
@@ -27,6 +32,8 @@ class Tela2 : AppCompatActivity(){
             insets
 
         }
+
+
 
             email2 = findViewById(R.id.edtEmail)
             senha2 = findViewById(R.id.edtSenha)
@@ -46,7 +53,26 @@ class Tela2 : AppCompatActivity(){
             }
 
 
+            fun getCurre(){
+                val retrofitClient = NetworkUtils.getRetroInstance("https://cdn.jsdelive.net/")
+                val endpoint = retrofitClient.create(Endpoint::class.java)
 
+                endpoint.getCurrencies().enqueue(object : retrofit2.Callback<JsonObject> {
+                    override fun onResponse(call: Call<JsonObject>, response: Response<JsonObject>) {
+                        var data = mutableListOf<String>()
+
+                        response.body()?.keySet()?.iterator()?.forEach {
+                            data.add(it)
+                        }
+                        print("opa")
+                        println(data.count())
+                    }
+
+                    override fun onFailure(call: Call<JsonObject>, t: Throwable) {
+                        print("Deu falha")
+                    }
+                })
+            }
 
             /*fun chamarFuncaoDeA(esqueceuSenha: EsqueceuSenha){
                 esqueceuSenha.trocarSenha()
@@ -73,5 +99,26 @@ class Tela2 : AppCompatActivity(){
             }
 
         }
+        fun getCurre(){
+            val retrofitClient = NetworkUtils.getRetroInstance("https://cdn.jsdelive.net/")
+            val endpoint = retrofitClient.create(Endpoint::class.java)
+
+            endpoint.getCurrencies().enqueue(object : retrofit2.Callback<JsonObject> {
+                override fun onResponse(call: Call<JsonObject>, response: Response<JsonObject>) {
+                    var data = mutableListOf<String>()
+
+                    response.body()?.keySet()?.iterator()?.forEach {
+                        data.add(it)
+                    }
+                    print("opa")
+                    println(data.count())
+                }
+
+                override fun onFailure(call: Call<JsonObject>, t: Throwable) {
+                    print("Deu falha")
+                }
+            })
+        }
+
     }
 }
