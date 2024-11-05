@@ -36,4 +36,12 @@
     <string name="opa3">"Eduarda\n + Procedimentos realizados por:\nClaudio\n             + limpeza OK\n         + Carie OK\nValor do tratamento:\nLucro por parte do profissional: "</string>
     <string name="Denunciar">Denunciar</string>
     <string name="verSinistros">Sinistros\n</string>
+    <string name="Texto5">Clinica DentalCompany\nScoring 3\nQuantidade de profissionais 1\nSinitros 20</string>
+    <string name="ClinicasCre">Clinicas Credenciadas</string>
+    <string name="Texto6">Clinica Sorriso Feliz\nScoring 5\nQuantidade de profissionais 2\nSinitros 50</string>
+    <string name="Texto7">Clinica OdontoRay\nScoring 5\nQuantidade de profissionais 5\nSinitros 300</string>
+    <string name="Deslogar">Deslogar</string>
+    <string name="VerPro10">Ver Profissionais</string>
+    <string name="TextoDrClaudio">Dr Claudio Bittencourt\nScoring 3\nAtendimentos Realizados</string>
+    <string name="TextoDrClaudio2">Dr. Claudio Bittencout\nClinica DentalCompany\nScoring 3\nAtendimentos Realizados 3</string>
 </resources>

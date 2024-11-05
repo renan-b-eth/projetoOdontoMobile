@@ -6,6 +6,7 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -40,6 +41,8 @@ class Tela2 : AppCompatActivity(){
                 Log.i("teste", "LOGADO") /*IR PARA A TELA*/
                 val intent = Intent(this, GerenciamentoEmpresa::class.java)
                 startActivity(intent)
+            } else {
+                Toast.makeText(this, "EMAIL OU SENHA ERRADA", Toast.LENGTH_SHORT).show()
             }
 
 
